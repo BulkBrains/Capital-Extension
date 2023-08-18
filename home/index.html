@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Capital - Empowers you to search multiple search engines and websites through your new powerful, non intrussive, home page">
+
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/template.css">
+
+        <script defer src="js/search.js"></script>
+        <script defer src="js/time.js"></script>
+
+        <title>Capital</title>
+    </head>
+    <body>
+        <!--Topnav-->
+        <nav>
+            <!-- Left-aligned links (default) -->
+            <a href="about:newtab" class="primary"><img alt="" src="img/capital.svg" height="20"> Capital</a>
+            <a href="https://bulkbrains.com" class="primary">BulkBrains</a>
+
+            <!-- Centered link -->
+            <div class="topnav-centered">
+
+            </div>
+
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+                <a href="/account.html" title="Account"><img height="20px" width="20px" src="ico/user.svg"></a>
+            </div>
+        </nav>
+
+        <!--Header-->
+        <header style="background-image: url('img/kandersteg-lake.jpg'); height: 100%;">
+            <div class="content" style="top: 40%; color: lightgreen;">
+                <h1 id="time">14:53</h1>
+                <h3 id="date">25th of Jult 2023</h3>
+                <form id="searchForm">
+                    <input placeholder="Search the web" type="text" id="searchBox" autocomplete="off" autofocus>
+
+                    <div class="search-select-content">
+                        <a title="Google"><img height="20px" width="20px" src="ico/google.svg"></a>
+                        <a title="Bing"><img height="20px" width="20px" src="ico/bing.svg"></a>
+                        <a title="DuckDuckGo"><img height="20px" width="20px" src="ico/duckduckgo.svg"></a>
+                        <a title="Qwant"><img height="20px" width="20px" src="ico/qwant.svg"></a>
+                        <a title="YouTube"><img height="20px" width="20px" src="ico/youtube.svg"></a>
+                        <a title="TikTok"><img height="20px" width="20px" src="ico/tiktok.svg"></a>
+                        <a title="Wikipedia"><img height="20px" width="20px" src="ico/wikipedia.svg"></a>
+                        <a title="Amazon"><img height="20px" width="20px" src="ico/amazon.svg"></a>
+                    </div>
+
+                    <button title="Talk" type="button" id="mic" style="display: none;"><img height="20px" width="20px" src="ico/mic.svg"></button>
+                    <button title="Go" type="submit" id="go"><img height="20px" width="20px" src="ico/search.svg"></button>
+                </form>
+            </div>
+        </header>
+    </body>
+</html>
