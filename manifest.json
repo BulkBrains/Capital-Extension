@@ -16,7 +16,9 @@
     "permissions": [
         "tabs",
         "scripting",
-        "storage"
+        "storage",
+        "audio-capture",
+        "webRequest"
     ],
     "action": {
         "default_popup": "popup/index.html"
