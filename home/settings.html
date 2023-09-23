@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/template.css">
 
         <script defer src="js/search.js"></script>
-        <script defer src="js/time.js"></script>
+        <script defer src="js/settings.js"></script>
 
         <title>Capital</title>
     </head>
@@ -35,10 +35,8 @@
         </nav>
 
         <!--Header-->
-        <header style="background-image: url('img/kandersteg-lake.jpg'); height: 100%;">
+        <header style="background-image: url('img/kandersteg-lake.jpg'); height: 50%;">
             <div class="content" style="top: 40%; color: lightgreen;">
-                <h1 id="time"></h1>
-                <h3 id="date"></h3>
                 <form id="searchForm">
                     <input placeholder="Search the web" type="text" id="searchBox" autocomplete="off" autofocus>
 
@@ -58,5 +56,31 @@
                 </form>
             </div>
         </header>
+
+
+        <!--Settings-->
+        <div class="main" style="text-align: center;">
+
+            <h1>Settings</h1>
+
+            <br>
+
+            <h2>Default Search Engine</h2>
+
+            <form id="engineForm">
+                <select>
+                    <option value="google">Google</option>
+                    <option value="bing">Bing</option>
+                    <option value="duckduckgo">DuckDuckGo</option>
+                    <option value="qwant">Qwant</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="wikipedia">Wikipedia</option>
+                    <option value="amazon">Amazon</option>
+                </select>
+                <button type="submit">Set</button>
+            </form>
+
+        </div>
     </body>
 </html>
