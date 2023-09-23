@@ -1,23 +1,4 @@
-const speechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition
-
-// Get Cookie Function
-function getCookie(cname) {
-    let name = cname + "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(";");
-    for(let i = 0; i <ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) === " ") {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) === 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-
-    return "";
-}
-
+const speechRecognition = window.webkitSpeechRecognition || window.SpeechRecognitionAlternative
 
 // Search
 const google = "https://google.com/search?q="
@@ -72,12 +53,10 @@ const micIcon = micBtn.querySelector("img")
 form.addEventListener("submit", e => {
     e.preventDefault()
 
-    console.log(document.cookie)
-
-    if (getCookie("engine") === "") {
+    if (localStorage.getItem("engine") === "") {
         goSearch("bing")
     }else{
-        goSearch(getCookie("engine"))
+        goSearch(localStorage.getItem("engine"))
     }
 })
 
