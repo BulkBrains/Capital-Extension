@@ -2,6 +2,7 @@
 html, body {
     --primary: lightgreen;
     --secondary: darkslategrey;
+    --secondaryA: #2f4f4f90;
     --background: rgb(35, 35, 35);
 
     --picAvg: ;
@@ -29,7 +30,7 @@ nav {
 
 nav a {
     float: left;
-    color: var(--primary);
+    color: var(--primary) !important;
     text-align: center;
     padding: 25px 16px;
     text-decoration: none;
@@ -75,6 +76,7 @@ header {
     transform: translate(-50%, -50%);
     text-align: center;
     margin: 0;
+    width: 100%;
 }
 
 .content h1 {
@@ -111,29 +113,46 @@ body a:visited {
 /* Links */
 .a {
     text-decoration:none;
-    border-bottom: 2px solid lightgreen;
+    border-bottom: 2px solid var(--primary);
     color: inherit;
     transition-duration: 1s;
 }
 
 .a:hover {
-    background: lightgreen;
-    color: darkslategrey;
+    background: var(--primary);
+    color: var(--secondary);
     transition-duration: 1s;
 }
 
-/* Search */
-.content {
-    width: 100% !important;
+/* Input */
+form {
+    display: block;
 }
 
+input {
+    background-color: transparent;
+    width: 300px;
+    padding: 14px 28px;
+    font-size: 16px;
+    color: var(--primary);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--primary);
+}
+
+input::placeholder {
+    color: var(--primary);
+}
+
+
+/* Search */
 #searchForm {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 50%;
     max-width: 750px;
-    background-color: rgba(47, 79, 79, 0.8);
+    background-color: var(--secondaryA);
     padding: 10px;
     border-radius: 10px;
 }
@@ -155,7 +174,8 @@ body a:visited {
 .search-select-content a {
     width: 12.5%;
     font-size: 20px;
-    color: lightgreen;
+    color: var(--primary);
+    height: 20px;
 }
 
 .search-select-content:hover a {
@@ -163,7 +183,7 @@ body a:visited {
 }
 
 .search-select-content a img {
-    color: lightgreen;
+    color: var(--primary);
 }
 
 #go {
@@ -171,7 +191,7 @@ body a:visited {
     position: absolute;
     right: 30px;
     top: 30px;
-    color: lightgreen;
+    color: var(--primary);
     font-size: 20px;
 }
 
@@ -180,7 +200,7 @@ body a:visited {
     position: absolute;
     right: 70px;
     top: 30px;
-    color: lightgreen;
+    color: var(--primary);
     font-size: 20px;
 }
 

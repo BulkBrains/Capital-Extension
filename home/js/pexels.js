@@ -18,7 +18,7 @@ fetch("https://capital.bulkbrains.com/pexels.json")
     const picAvgColour = result.photos[picNum].avg_color
     const picInvertColour = invertHex(picAvgColour.replace("#", ""))
 
-    console.log(picInvertColour)
-
-    body.style.color = picInvertColour
+    body.style.setProperty("--primary", "#" + picInvertColour)
+    body.style.setProperty("--secondary", "#" + picAvgColour)
+    body.style.setProperty("--secondaryA", "#" + picAvgColour + "00")
 })
