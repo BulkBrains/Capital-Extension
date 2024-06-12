@@ -182,6 +182,10 @@ input::placeholder {
     cursor: pointer;
 }
 
+.search-select-content a svg path {
+    fill: var(--primary) !important;
+}
+
 .search-select-content a img {
     color: var(--primary);
 }
