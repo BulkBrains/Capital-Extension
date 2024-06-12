@@ -48,7 +48,8 @@ function goSearch(engine) {
 const form = document.getElementById("searchForm")
 const search = document.getElementById("go")
 const micBtn = document.getElementById("mic")
-const micIcon = micBtn.querySelector("img")
+const micIcon = document.getElementById("micIcon")
+const micMIcon = document.getElementById("micMIcon")
 
 form.addEventListener("submit", e => {
     e.preventDefault()
@@ -78,11 +79,13 @@ if (speechRecognition) {
     }
 
     speech.onstart = function () {
-        micIcon.srcset = "mic-slash"
+        micIcon.style.display = "none"
+        micMIcon.style.display = "block"
     }
 
     speech.onend = function () {
-        micIcon.srcset = "mic"
+        micIcon.style.display = "block"
+        micMIcon.style.display = "none"
     }
 
     speech.onresult = function (event) {

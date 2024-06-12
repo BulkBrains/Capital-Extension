@@ -37,6 +37,14 @@ nav a {
     font-size: 20px;
 }
 
+nav a svg rect {
+    fill: var(--primary);
+}
+
+nav a svg path {
+    fill: var(--primary);
+}
+
 nav a:hover {
     color: var(--primary);
 }
@@ -62,6 +70,7 @@ nav a.active {
 header {
     background-image: url('../img/kandersteg-lake.jpg');
     height: 100%;
+    width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,6 +208,10 @@ input::placeholder {
     font-size: 20px;
 }
 
+#go svg path {
+    fill: var(--primary);
+}
+
 #mic {
     all: unset;
     position: absolute;
@@ -206,6 +219,10 @@ input::placeholder {
     top: 30px;
     color: var(--primary);
     font-size: 20px;
+}
+
+#mic svg path {
+    fill: var(--primary);
 }
 
 #go:hover {
