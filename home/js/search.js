@@ -1,5 +1,3 @@
-const speechRecognition = window.webkitSpeechRecognition || window.SpeechRecognitionAlternative
-
 // Search
 const google = "https://google.com/search?q="
 const bing = "https://bing.com/search?q="
@@ -62,51 +60,55 @@ form.addEventListener("submit", e => {
 })
 
 micBtn.onclick = function () {
-    console.log("Mic")
-}
+    navigator.webkitGetUserMedia({
+        audio: true,
+    }, function(stream) {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        const speech = new SpeechRecognition();
 
-if (speechRecognition) {
-    micBtn.style.display = "block"
+        console.log(micIcon.style.display);
 
-    const speech = new speechRecognition()
+        if (micIcon.style.display === "block") {
+            console.log("Listening...");
 
-    micBtn.onclick = function () {
-        if (micIcon.srcset === "mic") {
-            speech.start()
+            speech.start();
         } else {
-            speech.stop()
+            speech.stop();
         }
-    }
 
-    speech.onstart = function () {
-        micIcon.style.display = "none"
-        micMIcon.style.display = "block"
-    }
+        speech.onstart = function () {
+            micIcon.style.display = "none";
+            micMIcon.style.display = "block";
+        };
 
-    speech.onend = function () {
-        micIcon.style.display = "block"
-        micMIcon.style.display = "none"
-    }
+        speech.onend = function () {
+            micIcon.style.display = "block";
+            micMIcon.style.display = "none";
+        };
 
-    speech.onresult = function (event) {
-        let current = event.resultIndex
-        let transcript = event.results[current][0].transcript
+        speech.onresult = function (event) {
+            let current = event.resultIndex;
+            let transcript = event.results[current][0].transcript;
 
-        if (transcript.toLowerCase().trim() === "stop recording") {
-            speech.stop()
-        } else if (!searchBox.value) {
-            searchBox.value = transcript
-        } else {
-            if (transcript.toLowerCase().trim() === "go") {
-                form.submit()
-            } else if (transcript.toLowerCase().trim() === "reset input") {
-                searchBox.value = ""
+            if (transcript.toLowerCase().trim() === "stop recording") {
+                speech.stop();
+            } else if (!searchBox.value) {
+                searchBox.value = transcript;
             } else {
-                searchBox.value = transcript
+                if (transcript.toLowerCase().trim() === "go") {
+                    form.submit();
+                } else if (transcript.toLowerCase().trim() === "reset input") {
+                    searchBox.value = "";
+                } else {
+                    searchBox.value = transcript;
+                }
             }
-        }
-    }
-}
+        };
+
+    }, function() {
+        console.log("Error accessing microphone");
+    });
+};
 
 
 // Search Engine Default

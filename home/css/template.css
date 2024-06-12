@@ -4,6 +4,7 @@ html, body {
     --secondary: darkslategrey;
     --secondaryA: #2f4f4f90;
     --background: rgb(35, 35, 35);
+    --text: white;
 
     --picAvg: ;
     --picInv: ;
@@ -15,6 +16,7 @@ html, body {
     height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+    color: var(--text);
 }
 
 
@@ -30,7 +32,7 @@ nav {
 
 nav a {
     float: left;
-    color: var(--primary) !important;
+    color: var(--primary);
     text-align: center;
     padding: 25px 16px;
     text-decoration: none;
@@ -46,11 +48,11 @@ nav a svg path {
 }
 
 nav a:hover {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 nav a.active {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .topnav-centered {
@@ -246,4 +248,34 @@ input::placeholder {
     #searchForm {
         width: 90%;
     }
+}
+
+
+/* Input */
+select {
+    background-color: transparent;
+    width: 300px;
+    padding: 14px 28px;
+    font-size: 16px;
+    color: var(--secondary);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.main button {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.main button:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
 }
