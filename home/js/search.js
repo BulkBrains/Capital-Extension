@@ -113,5 +113,5 @@ if (speechRecognition) {
 function defaultEngine() {
     var engine = document.getElementById("engine").value
 
-    document.cookie = "engine=" + engine + "; expires=Thu, 18 Dec 2023 12:00:00 UTC; path=/"
+    document.cookie = "engine=" + engine + "; expires=Thu, 18 Dec 2024 12:00:00 UTC; path=/"
 }
