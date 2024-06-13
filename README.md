@@ -2,7 +2,6 @@
   <img height="300px" src="https://capital.bulkbrains.com/img/capital.svg">
   <h1>Capital</h1>
   <h3>by BulkBrains</h3>
-  <h3>Empowering Innovation</h3>
   <h3><a href="https://capital.bulkbrains.com">capital.bulkbrains.com</a></h3>
   
   <h4>Capital empowers users to search multiple sites and search engines from the one beautiful homepage.</h4>
