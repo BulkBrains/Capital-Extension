@@ -32,7 +32,7 @@ nav {
 
 nav a {
     float: left;
-    color: var(--primary);
+    color: var(--primary) !important;
     text-align: center;
     padding: 25px 16px;
     text-decoration: none;
@@ -45,14 +45,6 @@ nav a svg rect {
 
 nav a svg path {
     fill: var(--primary);
-}
-
-nav a:hover {
-    color: var(--secondary);
-}
-
-nav a.active {
-    color: var(--secondary);
 }
 
 .topnav-centered {
@@ -88,6 +80,21 @@ header {
     text-align: center;
     margin: 0;
     width: 100%;
+}
+
+header .credits {
+    bottom: 2px;
+    color: var(--primary);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    width: 50%;
+    max-width: 750px;
+    background-color: var(--secondaryA);
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .content h1 {

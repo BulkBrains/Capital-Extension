@@ -1,6 +1,9 @@
 const body = document.getElementsByTagName("body")[0]
 const header = document.getElementById("header")
 
+const photographerElement = document.getElementById("photographer")
+const imgLinkElement = document.getElementById("imgLink")
+
 function hexToRgb(hex) {
     // Remove the hash at the start if it's there
     hex = hex.replace(/^#/, '')
@@ -37,4 +40,10 @@ fetch("https://capital.bulkbrains.com/pexels.json")
     body.style.setProperty("--primary", picInvertColour)
     body.style.setProperty("--secondary", picAvgColour)
     body.style.setProperty("--secondaryA",picAvgColour + "90")
+
+    console.log(picPhotographer)
+
+    photographerElement.innerHTML = picPhotographer
+    photographerElement.href = picPhotographerURL
+    imgLink.href = picURL
 })

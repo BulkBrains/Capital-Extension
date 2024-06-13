@@ -63,52 +63,48 @@ micBtn.onclick = function () {
     navigator.webkitGetUserMedia({
         audio: true,
     }, function(stream) {
-        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-        const speech = new SpeechRecognition();
-
-        console.log(micIcon.style.display);
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
+        const speech = new SpeechRecognition()
 
         if (micIcon.style.display === "block") {
-            console.log("Listening...");
-
-            speech.start();
+            speech.start()
         } else {
-            speech.stop();
+            speech.stop()
         }
 
         speech.onstart = function () {
-            micIcon.style.display = "none";
-            micMIcon.style.display = "block";
-        };
+            micIcon.style.display = "none"
+            micMIcon.style.display = "block"
+        }
 
         speech.onend = function () {
-            micIcon.style.display = "block";
-            micMIcon.style.display = "none";
-        };
+            micIcon.style.display = "block"
+            micMIcon.style.display = "none"
+        }
 
         speech.onresult = function (event) {
-            let current = event.resultIndex;
-            let transcript = event.results[current][0].transcript;
+            let current = event.resultIndex
+            let transcript = event.results[current][0].transcript
 
             if (transcript.toLowerCase().trim() === "stop recording") {
-                speech.stop();
+                speech.stop()
             } else if (!searchBox.value) {
-                searchBox.value = transcript;
+                searchBox.value = transcript
             } else {
                 if (transcript.toLowerCase().trim() === "go") {
-                    form.submit();
+                    form.submit()
                 } else if (transcript.toLowerCase().trim() === "reset input") {
-                    searchBox.value = "";
+                    searchBox.value = ""
                 } else {
-                    searchBox.value = transcript;
+                    searchBox.value = transcript
                 }
             }
-        };
+        }
 
     }, function() {
-        console.log("Error accessing microphone");
-    });
-};
+        console.log("Error accessing microphone")
+    })
+}
 
 
 // Search Engine Default
