@@ -10,7 +10,7 @@
 <br><hr><br>
 
 <h2>Installing</h2>
-I'm currently waiting for the Chrome Web Store approval which will allow you to install Capital in all Chromium based browsers.
+I tried to get verification for the Chrome Web Store, however Google have refused to allow me to verify as you have to be over 18 to get verified on the Web Store.
 
 <br><hr><br>
 
