@@ -6,7 +6,7 @@ const imgLinkElement = document.getElementById("imgLink")
 
 function hexToRgb(hex) {
     // Remove the hash at the start if it's there
-    hex = hex.replace(/^#/, '')
+    hex = hex.replace(/^#/, "")
     // Parse the r, g, b values
     const bigint = parseInt(hex, 16)
     const r = (bigint >> 16) & 255
@@ -39,11 +39,15 @@ fetch("https://capital.bulkbrains.com/pexels.json")
 
     body.style.setProperty("--primary", picInvertColour)
     body.style.setProperty("--secondary", picAvgColour)
-    body.style.setProperty("--secondaryA",picAvgColour + "90")
+    body.style.setProperty("--secondaryA", picAvgColour + "90")
 
     console.log(picPhotographer)
 
-    photographerElement.innerHTML = picPhotographer
+    // Sanitize the content before setting innerHTML
+    photographerElement.innerHTML = DOMPurify.sanitize(picPhotographer)
     photographerElement.href = picPhotographerURL
-    imgLink.href = picURL
+    imgLinkElement.href = picURL
+})
+.catch(error => {
+    console.error("Error fetching and parsing data:", error)
 })
