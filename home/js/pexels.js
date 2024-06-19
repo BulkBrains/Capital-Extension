@@ -41,8 +41,6 @@ fetch("https://capital.bulkbrains.com/pexels.json")
     body.style.setProperty("--secondary", picAvgColour)
     body.style.setProperty("--secondaryA", picAvgColour + "90")
 
-    console.log(picPhotographer)
-
     // Sanitize the content before setting innerHTML
     photographerElement.innerHTML = DOMPurify.sanitize(picPhotographer)
     photographerElement.href = picPhotographerURL
