@@ -39,7 +39,7 @@ function goSearch(engine) {
     }else if (engine == null) {
         window.open(google + text, "_self")
     }else if (engine === "amazon") {
-        window.open(amazon + text + "&tag=bulkbrains-21", "_self")
+        window.open(amazon + text + "&tag=bulkbrains09-21", "_self")
     }
 }
 
