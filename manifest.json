@@ -22,7 +22,6 @@
         "tabs",
         "scripting",
         "storage",
-        "audio-capture",
         "webRequest"
     ],
     "browser_action": {
