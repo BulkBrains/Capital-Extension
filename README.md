@@ -10,7 +10,14 @@
 <br><hr><br>
 
 <h2>Installing</h2>
-I tried to get verification for the Chrome Web Store, however Google have refused to allow me to verify as you have to be over 18 to get verified on the Web Store.
+<h3>Chrome</h3>
+<p>Chrome Web Store informed me I wouldn't be allowed to upload until I turn 18, unfortunatly users will have to import the extension themselves.</p>
+
+<h3>Edge</h3>
+<p>Being looked into</p>
+
+<h3>Firefox</h3>
+<a href="https://addons.mozilla.org/en-US/firefox/addon/bulkbrains-capital/">https://addons.mozilla.org/en-US/firefox/addon/bulkbrains-capital/</a>
 
 <br><hr><br>
 
