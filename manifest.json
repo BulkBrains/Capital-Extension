@@ -6,7 +6,7 @@
     },
     "name": "BulkBrains Capital",
     "version": "1",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "Capital empowers you to search multiple search engines and websites through your new powerful, non intrussive, home page.",
     "icons": {
         "16": "icons/16.png",
