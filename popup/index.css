@@ -1,0 +1,28 @@
+body {
+    width: 300px;
+    height: 300px;
+    background-color: darkslategray;
+    color: lightgreen;
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+button {
+    background-color: darkslategray;
+    color: lightgreen;
+    border: 2px solid lightgreen;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    background-color: lightgreen;
+    color: darkslategray;
+}
