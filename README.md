@@ -11,13 +11,20 @@
 
 <h2>Installing</h2>
 <h3>Chrome</h3>
-<p>Chrome Web Store informed me I wouldn't be allowed to upload until I turn 18, unfortunatly users will have to import the extension themselves.</p>
+<p>Chrome Web Store: Coming Soon</p>
 
 <h3>Edge</h3>
-<p>Being looked into</p>
+<p>Chrome Web Store: Coming Soon</p>
+
+<h3>Brave</h3>
+<p>Chrome Web Store: Coming Soon</p>
+
+<h3>Opera</h3>
+<p>Chrome Web Store: Coming Soon</p>
 
 <h3>Firefox</h3>
-<a href="https://addons.mozilla.org/en-US/firefox/addon/bulkbrains-capital/">https://addons.mozilla.org/en-US/firefox/addon/bulkbrains-capital/</a>
+<p>Firefox Addons: <a href="https://addons.mozilla.org/en-US/firefox/addon/bulkbrains-capital/">https://addons.mozilla.org/en-US/firefox/addon/bulkbrains-capital/</a></p>
+<p>⚠️ If using source code for firefox you must change the manifest_version to 2 instead of 3 as Firefox does not yet support manifest version 3.</p>
 
 <br><hr><br>
 
