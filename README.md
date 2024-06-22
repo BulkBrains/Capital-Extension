@@ -11,7 +11,7 @@
 
 <h2>Installing</h2>
 <h3>Chrome</h3>
-<p>Chrome Web Store: Coming Soon</p>
+<p>Chrome Web Store: https://chromewebstore.google.com/detail/bulkbrains-capital/ggjighkficijblekmnchneknmgmjdhon?pli=1</p>
 
 <h3>Edge</h3>
 <p>Chrome Web Store: Coming Soon</p>
