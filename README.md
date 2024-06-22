@@ -14,13 +14,13 @@
 <p>Chrome Web Store: https://chromewebstore.google.com/detail/bulkbrains-capital/ggjighkficijblekmnchneknmgmjdhon?pli=1</p>
 
 <h3>Edge</h3>
-<p>Chrome Web Store: Coming Soon</p>
+<p>Chrome Web Store: https://chromewebstore.google.com/detail/bulkbrains-capital/ggjighkficijblekmnchneknmgmjdhon?pli=1</p>
 
 <h3>Brave</h3>
-<p>Chrome Web Store: Coming Soon</p>
+<p>Chrome Web Store: https://chromewebstore.google.com/detail/bulkbrains-capital/ggjighkficijblekmnchneknmgmjdhon?pli=1</p>
 
 <h3>Opera</h3>
-<p>Chrome Web Store: Coming Soon</p>
+<p>Chrome Web Store: https://chromewebstore.google.com/detail/bulkbrains-capital/ggjighkficijblekmnchneknmgmjdhon?pli=1</p>
 
 <h3>Firefox</h3>
 <p>Firefox Addons: <a href="https://addons.mozilla.org/en-US/firefox/addon/bulkbrains-capital/">https://addons.mozilla.org/en-US/firefox/addon/bulkbrains-capital/</a></p>
