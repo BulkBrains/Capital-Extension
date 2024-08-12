@@ -286,3 +286,37 @@ select {
     background-color: var(--primary);
     color: var(--secondary);
 }
+
+
+/* Footer */
+footer {
+    background-color: var(--background);
+    background-image: linear-gradient(rgba(255, 0, 0, 0), var(--secondary));
+    position: relative;
+    left: 52px;
+    width: 100%;
+}
+
+footer .content {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer .socials {
+    transition-duration: 0.5s;
+}
+
+footer .socials a:hover {
+    color: var(--primary);
+}
+
+footer.fix {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+}
+
+.footer-spacer {
+    height: 189px;
+}
