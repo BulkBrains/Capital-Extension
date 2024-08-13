@@ -290,9 +290,8 @@ select {
 /* Footer */
 footer {
     background-color: var(--background);
-    background-image: linear-gradient(rgba(255, 0, 0, 0), var(--secondary));
+    background-image: linear-gradient(rgba(255, 0, 0, 0), #257c25);
     position: relative;
-    left: 52px;
     width: 100%;
 }
 
@@ -307,7 +306,7 @@ footer .socials {
 }
 
 footer .socials a:hover {
-    color: var(--primary);
+    color: #257c25;
 }
 
 footer.fix {
@@ -318,4 +317,23 @@ footer.fix {
 
 .footer-spacer {
     height: 189px;
+}
+
+
+/* Hr */
+hr {
+    max-width: 400px;
+    width: 75%;
+    background-color: var(--accent);
+    border-color: var(--accent);
+    height: 1px;
+    border-radius: 1px;
+}
+
+hr.primary {
+    max-width: 500px;
+    width: 100%;
+    background-color: var(--primary);
+    height: 2px;
+    border-radius: 1px;
 }
