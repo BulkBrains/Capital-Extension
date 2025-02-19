@@ -40,6 +40,8 @@ function goSearch(engine) {
         window.open(google + text, "_self")
     }else if (engine === "amazon") {
         window.open(amazon + text + "&tag=bulkbrains09-21", "_self")
+    }else {
+        chrome.search.query({ text: text })
     }
 }
 
@@ -52,11 +54,7 @@ const micMIcon = document.getElementById("micMIcon")
 form.addEventListener("submit", e => {
     e.preventDefault()
 
-    if (localStorage.getItem("engine") === "") {
-        goSearch("bing")
-    }else{
-        goSearch(localStorage.getItem("engine"))
-    }
+    goSearch()
 })
 
 micBtn.onclick = function () {
@@ -104,12 +102,4 @@ micBtn.onclick = function () {
     }, function() {
         console.log("Error accessing microphone")
     })
-}
-
-
-// Search Engine Default
-function defaultEngine() {
-    var engine = document.getElementById("engine").value
-
-    document.cookie = "engine=" + engine + "; expires=Thu, 18 Dec 2024 12:00:00 UTC; path=/"
 }

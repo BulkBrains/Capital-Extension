@@ -293,6 +293,7 @@ footer {
     background-image: linear-gradient(rgba(255, 0, 0, 0), #257c25);
     position: relative;
     width: 100%;
+    color: white !important;
 }
 
 footer .content {
