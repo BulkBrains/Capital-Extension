@@ -36,8 +36,6 @@ function goSearch(engine) {
         window.open(tiktok + text, "_self")
     }else if (engine === "wikipedia") {
         window.open(wikipedia + text, "_self")
-    }else if (engine == null) {
-        window.open(google + text, "_self")
     }else if (engine === "amazon") {
         window.open(amazon + text + "&tag=bulkbrains09-21", "_self")
     }else {
